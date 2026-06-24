@@ -1,0 +1,193 @@
+.overview-card{
+    position: fixed;
+    top: 24px;
+    left: 20px;
+    height: fit-content;
+    width: 350px;
+    background-color: #141414;
+    border: 1px solid #444444;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+/* Collapsed via height (not display) so its reveal can be animated.
+   GSAP drives height/opacity on expand & collapse. */
+.overview-card .media-container.polaroid{
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    opacity: 0;
+}
+
+.overview-card .row .col:nth-child(2),
+.overview-card .row .col:nth-child(3){
+    display: none;
+}
+
+.overview-card.is-active{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 24px 20px;
+    width: auto;
+    height: auto;
+    background-color: black;
+    border: 1px solid #444444;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+/* Polaroid expand/collapse is GSAP-driven (height + opacity), so no
+   class-based override here — that would snap instantly. */
+
+.overview-card.is-active .row .col:nth-child(2),
+.overview-card.is-active .row .col:nth-child(3){
+    display: flex;
+}
+
+.controls-group button:last-of-type::before{
+    content: "•";
+    color: white;
+    padding-inline: var(--spacing-4);
+}
+
+.row{
+    display: flex;
+    padding-inline: var(--spacing-12);
+}
+
+.overview-card.is-active .row{
+    padding-inline: var(--spacing-20);
+}
+
+.row.overview--header{
+    justify-content: space-between;
+    padding-block-start: var(--spacing-20);
+    transition: .48s ease;
+}
+
+.row.overview--main-content{
+    flex: 1;
+    display: flex;
+    gap: var(--spacing-20);
+}
+
+.row.overview--main-content .col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 325px;
+    padding-block: var(--spacing-20);
+}
+
+.row.overview--main-content .col.col-main{
+    max-width: none;
+    align-items: center;
+}
+
+.row.overview--main-content .col.col-main > div{
+    max-width: 497px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col .header{
+    margin-block-end: var(--spacing-20);
+}
+
+.media-container.polaroid{
+    height: auto;
+    width: 100%;
+    margin-bottom: var(--spacing-20);
+}
+
+.media-container.polaroid img{
+    height: auto;
+}
+
+.current-item{
+    flex: 0 0 calc(33% - 13.333px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+}
+
+.current-item .media-container{
+    position: relative;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    align-self: flex-start;
+    overflow: hidden;
+}
+
+.current-item .media-container.media-container--landscape{
+    aspect-ratio: 16 / 10;
+}
+
+.current-item img{
+    position: absolute;
+    inset: 0;
+}
+.overview--footer::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    border-top: 1px solid #444444;
+}
+
+.overview-card.is-active .overview--footer::before{
+    left: 20px;
+    right: 20px;
+}
+
+.overview--footer{
+    padding-block: var(--spacing-16);
+}
+
+ul.principles li::before{
+    content: "";
+    aspect-ratio: 1 / 1;
+    display: inline-block;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: var(--spacing-6);
+}
+
+
+.about .header{
+    margin-bottom: var(--spacing-12);
+}
+
+ul.socials li:not(:first-child)::before{
+    content: "•";
+    display: inline-block;
+    margin-inline: var(--spacing-4);
+    color: white;
+}
+
+
+.footer-contact a {
+    display: block;
+    transform: translateY(100%);
+    transition: .48s ease;
+    color: #FFC033;
+}
+
+.footer-contact > span{
+    transition: .48s ease;
+    transform: translateY(0%);
+}
+
+.footer-contact:hover > span{
+    transform: translateY(-100%);
+}
+
+.footer-contact:hover a{
+    transform: translateY(0%);
+}

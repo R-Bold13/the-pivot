@@ -1,0 +1,160 @@
+
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../../assets/fonts/HelveticaNeue-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../../assets/fonts/HelveticaNeue-Roman.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../../assets/fonts/ppneuemontreal-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+
+
+
+
+:root {
+
+    /*Font Family*/
+    --font-family-primary: "Helvetica Neue";
+    --font-family-secondary: "Helvetica Neue", serif;
+
+    /*Font Size*/
+    --font-size-9: .5625rem;
+    --font-size-10: .625rem;
+    --font-size-11: .6875rem;
+    --font-size-12: .75rem;
+    --font-size-13: .8125rem;
+    --font-size-14: .875rem;
+    --font-size-15: .9375rem;
+    --font-size-16: 1rem;
+    --font-size-17: 1.0625rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.75rem;
+    --font-size-32: 2rem;
+     --font-size-36: 2.25rem;
+    --font-size-40: 2.5rem;
+    --font-size-48: 3rem;
+    --font-size-60: 3.75rem;
+    --font-size-64: 4rem;
+    --font-size-80: 5rem;
+    --font-size-90: 5.625rem;
+    --font-size-100: 6.25rem;
+    --font-size-140: 8.75rem;
+    --font-size-120: 7.5rem;
+    --font-size-132: 8.25rem;
+
+    /* Line Height */
+    --line-height-none: 1;
+    --line-height-tight: 1;
+    --line-height-medium: 1.32;
+}
+
+.line-height-tight{line-height: 1.2 !important;}
+.line-height-none{line-height: 1.1 !important;}
+.line-height-medium{font-variant: var(--line-height-medium)}
+/*== Font Family ==*/
+
+.font-family-primary{
+    font-family: var(--font-family-primary);
+}
+
+/*== Font Weight ==*/
+
+.type-weight-medium{font-weight: 500;}
+.type-weight-semi{font-weight: 600 !important;}
+.type-weight-bold{font-weight: 700 !important;}
+
+/*== Text Transform ==*/
+
+.text-uppercase{text-transform: uppercase;}
+.text-capitalize{text-transform: capitalize !important;}
+
+
+/*== Display Type ==*/
+
+
+
+/*== Heading Type ==*/
+
+
+/*== Body Type ==*/
+.type-body-11{
+    font-size: var(--font-size-11);
+    line-height: 1.5;
+    letter-spacing: 0.010em;
+}
+
+.type-body-12{
+    font-size: var(--font-size-12);
+    line-height: 1.5;
+    letter-spacing: 0.010em;
+}
+
+
+/*== Type Heading ==*/
+.type-heading-24{
+    font-size: var(--spacing-24);
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.type-heading-20{
+    font-size: var(--font-size-20);
+    line-height: 1.25;
+    letter-spacing: .12px;
+    font-weight: 500;
+}
+
+.type-heading-17{
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.type-heading-16{
+    font-size: var(--font-size-16);
+    line-height: 1.25;
+    letter-spacing: .12px;
+    font-weight: 500;
+}
+
+
+/* == Type Utilities == */
+.type-label-10{
+    font-size: 10.5px;
+    line-height: 1;
+    letter-spacing: 0.024em;
+}
+
+.type-label-11{
+    font-size: var(--font-size-11);
+    line-height: 1.1;
+    letter-spacing: 0.022em;
+}
+
+.type-label-13{
+    font-size: var(--font-size-13);
+    line-height: 1.1;
+    letter-spacing: 0.022em;
+}
+
+.type-label-12{
+    font-size: var(--font-size-12);
+    line-height: 1;
+    letter-spacing: 0.01em;
+}

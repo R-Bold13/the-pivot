@@ -1,0 +1,37 @@
+/* base */
+@import './base/resets.css';
+@import './base/spacing.css';
+@import './base/color.css';
+@import './base/typography.css';
+
+/* utilities */
+@import './utilties/layout.css';
+
+/* components */
+@import './components/buttons/project-btn.css';
+@import './components/overlay/entry-modal--overlay.css';
+@import './components/overview-card.css';
+@import './components/index-item.css';
+@import './components/overlay/influence-modal.css';
+
+/* sections */
+@import './sections/endless-scroll.css';
+@import './sections/index.css';
+
+/* pages */
+@import './pages/case-study.css';
+
+@import './animations/reveal.css';
+
+
+
+html, body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  font-synthesis: none;
+  font-family: var(--font-family-primary);
+  cursor: default;
+}
+
+

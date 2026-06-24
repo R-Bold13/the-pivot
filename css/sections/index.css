@@ -1,0 +1,111 @@
+/* ============================================================
+   INDEX SECTION
+   ============================================================ */
+
+section.index {
+    min-height: 100svh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-80);
+    padding-inline: var(--spacing-20);
+    background-color: #141414;
+}
+
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+.index .sidebar {
+    flex: 0 0 453px;
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-block-start: calc(24px + var(--overview-card-height, 0px) + 40px);
+    padding-block-end: var(--spacing-20);
+}
+
+.nav-identity {
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+
+.content-index {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-40);
+    flex: 1;
+    padding-block-start: var(--spacing-40);
+}
+
+.content-index ul li {
+    height: 20px;
+}
+
+.category-block li .title-indicator {
+    gap: 0;
+}
+
+.category-block .title-indicator .indicator {
+    background-color: #BFDBFE;
+    width: 0;
+    margin-right: 0;
+    overflow: hidden;
+    height: calc(1em - 2px);
+    display: block;
+    transition: width 0.3s ease, margin-right 0.3s ease;
+}
+
+.category-block li h4 {
+    color: #898989;
+    transition: color 0.3s ease;
+}
+
+.category-block li .item-meta {
+    color: #A6A6A6;
+    transition: color 0.3s ease;
+}
+
+.category-block li.is-active h4,
+.category-block li:hover h4 {
+    color: var(--color-font-inverse-utility);
+}
+
+.category-block li.is-active .item-meta,
+.category-block li:hover .item-meta {
+    color: #C5C5C5;
+}
+
+.category-block li.is-active .title-indicator .indicator,
+.category-block li:hover .title-indicator .indicator {
+    width: 3px;
+    margin-right: var(--spacing-4);
+}
+
+
+/* ============================================================
+   ENDLESS SCROLL GRID
+   ============================================================ */
+
+.index-endless-scroll {
+    flex: 0 1 867px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+    padding-top: 25px;
+}
+
+.index-endless-scroll .col {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}

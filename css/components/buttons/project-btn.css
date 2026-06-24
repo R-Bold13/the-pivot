@@ -1,0 +1,72 @@
+.headline-btn{
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: var(--spacing-8);
+    height: var(--spacing-24);
+}
+
+.module-card-btn{
+    position: absolute;
+    bottom: var(--spacing-20);
+    left: 0;
+    width: 100%;
+    padding-inline: var(--spacing-20);
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-15);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0px;
+    color: var(--color-font-headline);
+    align-items: center;
+}
+
+.module-card-btn .trailing-icon{
+    background-color: var(--color-black);
+    aspect-ratio: 1 / 1;
+    height: 16px;
+    border-radius: 1px;
+    transition: .64s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.module-card-btn:hover .trailing-icon{
+    transform: scale(.75);
+}
+
+
+button.tertiary{
+    color: var(--color-font-inactive);
+    transition: .48s ease;
+}
+
+
+
+button.tertiary:hover{
+    color: #FFC033;
+}
+
+button.tertiary:hover::after{
+    transform: scaleX(1);
+}
+
+button.primary{
+    font-size: var(--font-size-11);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: .12px;
+    text-transform:capitalize;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 239, 206, 0.5);
+    padding: 6px 8px;
+}
+
+button.primary--trailing-icon{
+    gap: 8px;
+}

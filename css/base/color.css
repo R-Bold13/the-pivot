@@ -1,0 +1,47 @@
+:root{
+    /* Font Color */
+    --color-font-inactive: #CBCBCB;
+    --color-font-weak: #9D9D9D;
+    --color-font-medium: #6E6E6E;
+    --color-font-base: #575757;
+    --color-font-strong: #3C3C3C;
+    --color-font-headline: #1A1A1A;
+    --color-font-label-strong: #3D3D3D;
+    --color-font-inverse-base: #e8e8e8;
+    --color-font-inverse-utility: #f8f8f8;
+
+    /* UI Color */
+    --color-surface-primary: #F6F6F6;
+    --color-surface-secondary: #EEEEEE;
+    --color-stroke: #DDDDDD;
+    --color-black: #1A1A1A;
+    --color-border-dark: #232323;
+
+    /* Brand Color */
+    --color-primary: #D4501A;
+    --color-secondary: #6A90AD;
+    --color-accent: #F7BFB7;
+}
+
+/* -- Font Color Utilities -- */
+.color-font-secondary { color: var(--font-color-secondary); }
+.color-font-primary { color: var(--color-font-primary); }
+.color-font-inactive { color: var(--color-font-inactive) !important; }
+.color-font-weak { color: var(--color-font-weak); }
+.color-font-base { color: var(--color-font-base); }
+.color-font-medium { color: var(--color-font-medium); }
+.color-font-strong { color: var(--color-font-strong); }
+.color-font-headline {color: var(--color-font-headline);}
+.color-font-label-strong { color: var(--color-font-label-strong); }
+.color-font-inverse { color: var(--color-font-inverse-base) !important; }
+.color-font-inverse-strong { color: var(--color-font-inverse-utility) !important; }
+
+/* -- UI Color Utiliities -- */
+.color-border-dark{ background-color: var(--color-border-dark);}
+
+/* -- Surface Color Utilities -- */
+.color-surface-primary { background-color: var(--color-surface-primary); }
+.color-surface-secondary { background-color: var(--color-surface-secondary); }
+.color-black { background-color: var(--color-black); }
+.background-black { background-color: black; }
+.background-white{background-color: white;}

@@ -1,0 +1,5 @@
+.endless-scroll{
+    align-content: start;
+    padding-block-start: var(--spacing-200);
+}
+

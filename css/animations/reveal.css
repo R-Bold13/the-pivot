@@ -1,0 +1,49 @@
+/* Entrance: elements start hidden so async content never flashes in.
+   The page's JS reveals them with a GSAP stagger once content is built. */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+[data-hover="text"] {
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+
+}
+
+[data-hover="text"] > span{
+    display: block;
+    transition: .48s ease;
+}
+
+[data-hover="text"] > span:nth-child(1){
+    display: block;
+    position: relative;
+}
+
+[data-hover="text"] > span:nth-child(2){
+    display: block;
+    position: absolute;
+    transform: translateY(100%);
+
+}
+
+[data-hover="text"]:hover > span:nth-child(2){
+    transform: translateY(0%);
+}
+
+[data-hover="text"]:hover > span:nth-child(1){
+    transform: translateY(-100%) ;
+}
+
+

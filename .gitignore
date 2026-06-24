@@ -1,0 +1,15 @@
+# Local Netlify folder
+.netlify
+
+# Local assistant/editor settings
+.claude
+
+# macOS metadata
+.DS_Store
+
+# Design/source files that are not part of the deployed static site
+*.psd
+
+# Saved reference pages, not deployed site assets
+assets/videos/About - mesura.html
+assets/videos/About - mesura_files/

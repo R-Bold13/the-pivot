@@ -1,0 +1,100 @@
+
+.influence-modal--overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(121, 121, 121, 0.32);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .64s ease;
+}
+
+.influence-modal--overlay.is-active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.influence-modal--card{
+    width: 513px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .56s ease;
+}
+
+.influence-modal--overlay.is-active .influence-modal--card{
+    opacity: 1;
+}
+.influence-modal--card .row{
+    display: flex;
+    padding: var(--spacing-20);
+    background-color: black;
+}
+
+.influence-modal--card .row--header{
+    border-bottom: 1px solid var(--color-border-dark);
+}
+.influence-modal--card .row--content{
+    padding-block-end: 0px;
+    flex-direction: column;
+}
+
+.influence-modal--card .row--footer{
+    border-top: 1px solid var(--color-border-dark);
+}
+
+
+.influence-modal--card .discipline::after{
+    content: "–";
+    color: white;
+    padding-inline: var(--spacing-4);
+}
+
+.influence-modal--card .media-container{
+    aspect-ratio: 16 / 12;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pin the media out of flow so the 16/10 box governs every item — otherwise
+   an in-flow img/video collapses the container to its own intrinsic ratio.
+   Must cover video too (Moonlight), not just img. */
+.influence-modal--card .media-container img,
+.influence-modal--card .media-container video{
+    position: absolute;
+    inset: 0;
+}
+
+.influence-modal--card.no-cta .row--footer{
+    display: none;
+}
+
+.influence-modal--card.no-cta .row--content{
+    padding-block-end: var(--spacing-32);
+}
+
+
+.influence-modal--card .modal-close{
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: center;
+    height: 24px;
+}
+
+.influence-modal--card .modal-close > span{
+    transition: transform .48s ease;
+}
+
+.influence-modal--card .modal-close:hover > span:nth-child(1){
+    transform: translateX(2px);
+}
+
+.influence-modal--card .modal-close:hover > span:nth-child(3){
+    transform: translateX(-2px);
+}

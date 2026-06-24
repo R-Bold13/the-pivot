@@ -1,0 +1,43 @@
+/* === Universal Reset === */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* === List Reset === */
+
+ul, ol, li {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* === Link Reset === */
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    all: unset;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* === Button Reset === */
+
+button{
+    all: unset;
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+}
+
+/*== Image Reset ==*/
+
+img{height: 100%; width: 100%; object-fit: cover; display: block;}
+
+
+video{height: 100%; width: 100%; object-fit: cover; display: block;}
+
+[hidden] { display: none !important; }

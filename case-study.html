@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="color-surface-primary">
+
+    <div data-barba="wrapper">
+        <div data-barba="container" data-barba-namespace="project">
+            <main>
+                <div class="project-page color-surface-primary">
+                    <div class="page-inner">
+                        <!-- populated by initProjectFetch -->
+                    </div>
+                </div>
+                <footer class="case-study--footer" style="margin-top: 200px;">
+                    <div class="row row--controls">
+                        <!--Left Content-->
+                        <a href="/index.html">
+                            <div class="type-body-12 color-font-base type-weight-medium">← back to index: work, thoughts, & influences</div>
+                        </a>
+
+                        <!--Right Content-->
+                        <div class="flex-column gap-20">
+                            <!--Row Heading-->
+                            <div class="case-study--heading type-body-12 color-font-base type-weight-medium">next case study</div>
+
+                            <!--Case Study Link Content-->
+                            <a></a>
+                        </div>
+                        
+                    </div>
+                    <div class="row border">
+                        <div class="border"></div>
+                        <div class="border"></div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+        
+    </div>
+    <script>
+        function toggleSound(btn) {
+            const video = btn.closest('.module-media').querySelector('#main-video');
+            const label = btn.querySelector('.sound-label');
+            video.muted = !video.muted;
+            label.textContent = video.muted ? 'Click for sound' : 'Mute';
+        }
+    </script>
+</body>
+<script type="module" src="/js/main.js"></script>
+</html>
