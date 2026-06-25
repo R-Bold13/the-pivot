@@ -53,7 +53,7 @@ section.index {
 }
 
 .category-block .title-indicator .indicator {
-    background-color: #BFDBFE;
+    background-color: #F6A705;
     width: 0;
     margin-right: 0;
     overflow: hidden;
@@ -79,7 +79,7 @@ section.index {
 
 .category-block li.is-active .item-meta,
 .category-block li:hover .item-meta {
-    color: #C5C5C5;
+    color: #F6A705;
 }
 
 .category-block li.is-active .title-indicator .indicator,
